@@ -96,3 +96,13 @@ new Vue ({
                         'to the student accommodation in Vienna.'
     }
 });
+
+new Vue ({
+    el: '#headline-center',
+    data: {
+        headlineText: 'Fast Admission',
+        headlineInner: 'You don’t have to take care of the admission process. Our consultants will be in the' +
+                        'negotiation process with the universities while your admission process will be in progress.' +
+                        'They will also inform you in case of any decision made by the university administration.'
+    }
+});
