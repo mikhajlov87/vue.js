@@ -51,3 +51,12 @@ new Vue ({
         text: 'Start a successful future<br>in Austria today!'
     }
 });
+
+new Vue ({
+    el: '#subline',
+    data: {
+        text: 'Higher education in Austria will help you<br>' +
+        'to become one of the highest-paid specialists in Europe.<br>' +
+        'Austria is a perfect country for living, working, studying and just enjoying your life.'
+    }
+});
