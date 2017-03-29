@@ -14,24 +14,11 @@
             <div class="grid__col_12">
                 <div class="header__logo"></div>
                 <nav class="header__menu">
-                    <ul class="menu">
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/about" title="About">About</a>
-                        </li>
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/education" title="Education">Education</a>
-                        </li>
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/universities" title="Университеты">Universities</a>
-                        </li>
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/services" title="Услуги">Services</a>
-                        </li>
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/news" title="Новости">Blog</a>
-                        </li>
-                        <li class="menu__item ">
-                            <a class="menu__link" href="/contacts" title="Контакты">Contact</a>
+                    <ul class="menu" id="menu">
+                        <li class="menu__item" v-for="link in links">
+                            <a v-bind:href="link.href" v-bind:title="link.title" class="menu__link">
+                                {{ link.name }}
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -287,5 +274,6 @@
         </div>
     </footer>
     <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
