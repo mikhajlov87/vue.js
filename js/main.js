@@ -116,3 +116,14 @@ new Vue ({
                         'information for our clients.'
     }
 });
+
+new Vue ({
+    el: '#profits-button',
+    data: {
+        link: {
+            name: 'More about our offer',
+            href: 'services',
+            title: 'Подробнее о наших услугах'
+        }
+    }
+});

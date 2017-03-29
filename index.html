@@ -68,9 +68,11 @@
             </div>
         </div>
         <div class="grid grid_space-between">
-            <div class="grid__col_12 profits-index__buttons">
-                <a class="btn btn_size_large" href="services" title="Подробнее о наших услугах">
-                    More about our offer
+            <div class="grid__col_12 profits-index__buttons" id="profits-button">
+                <a class="btn btn_size_large"
+                   v-bind:href="link.href"
+                   v-bind:title="link.title">
+                    {{ link.name }}
                 </a>
             </div>
         </div>
