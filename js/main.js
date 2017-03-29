@@ -127,3 +127,29 @@ new Vue ({
         }
     }
 });
+
+new Vue ({
+    el: '#how-help',
+    data: {
+        header: 'How Can Education in Austria Make You Successful in the Future?',
+
+        innerTextFirst: 'Studying in Europe, especially in Austria, is one of the best ways to get a good career' +
+                    'and be successful in the future. Reputable universities in Austria are known for developing' +
+                    'young and successful professionals in the field of engineering, business, medicine, arts and' +
+                    'natural science. By choosing Austria as your study destination, you get a high-quality' +
+                    'education that hones your skills and brings out your true potential.',
+
+        innerTextSecond: 'Austria is known for having the best universities in Europe where you can be passionate about' +
+                        'learning new things and polishing your skills to prepare you for the future. You will' +
+                        'definitely stand out from other job candidates because you have the skills that can only be' +
+                        'gained through international experience. Education in Austria can also broaden your worldview' +
+                        'because you are exposed to a new culture which can diversify your knowledge and values.' +
+                        'Studying in Austria also exposes you to different leadership and business styles that will help' +
+                        'you manage and work with people from all over the world.',
+        link: {
+            name: 'Choose University',
+            href: 'universities',
+            title: 'Выбрать эффективный ВУЗ'
+        }
+    }
+});

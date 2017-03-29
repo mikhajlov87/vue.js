@@ -77,38 +77,21 @@
             </div>
         </div>
     </div>
-    <section class="howwecanhelp-index">
+    <section class="howwecanhelp-index" id="how-help">
         <div class="grid grid_space-between">
             <div class="grid__col_7">
                 <div class="howwecanhelp-index__image"></div>
             </div>
             <div class="grid__col_5">
                 <div class="howwecanhelp-index__content">
-                    <h2 class="headline headline_4 headline_right">
-                        How Can Education in Austria Make You Successful in the Future?
-                    </h2>
-
-                    <p class="p p_right">
-                        Studying in Europe, especially in Austria, is one of the best ways to get a good career
-                        and be successful in the future. Reputable universities in Austria are known for developing
-                        young and successful professionals in the field of engineering, business, medicine, arts and
-                        natural science. By choosing Austria as your study destination, you get a high-quality
-                        education that hones your skills and brings out your true potential.
-                    </p>
-
-                    <p class="p p_right">
-                        Austria is known for having the best universities in Europe where you can be passionate about
-                        learning new things and polishing your skills to prepare you for the future. You will
-                        definitely stand out from other job candidates because you have the skills that can only be
-                        gained through international experience. Education in Austria can also broaden your worldview
-                        because you are exposed to a new culture which can diversify your knowledge and values.
-                        Studying in Austria also exposes you to different leadership and business styles that will help
-                        you manage and work with people from all over the world.
-                    </p>
-
+                    <h2 class="headline headline_4 headline_right">{{ header }}</h2>
+                    <p class="p p_right">{{ innerTextFirst }}</p>
+                    <p class="p p_right">{{ innerTextSecond }}</p>
                     <div class="howwecanhelp-index__buttons">
-                        <a class="btn btn_size_large" href="universities" title="Выбрать эффективный ВУЗ">
-                            Choose University
+                        <a class="btn btn_size_large"
+                           v-bind:href="link.href"
+                           v-bind:title="link.title">
+                            {{ link.name }}
                         </a>
                     </div>
                 </div>
