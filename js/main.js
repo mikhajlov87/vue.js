@@ -79,3 +79,10 @@ new Vue ({
         ]
     }
 });
+
+new Vue ({
+    el: '#headline_2',
+    data: {
+        text: 'Three unique advantages to work with us:'
+    }
+});
