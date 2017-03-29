@@ -16,7 +16,9 @@
                 <nav class="header__menu">
                     <ul class="menu" id="menu">
                         <li class="menu__item" v-for="link in links">
-                            <a v-bind:href="link.href" v-bind:title="link.title" class="menu__link">
+                            <a class="menu__link"
+                               v-bind:href="link.href"
+                               v-bind:title="link.title">
                                 {{ link.name }}
                             </a>
                         </li>
@@ -30,12 +32,12 @@
             <div class="grid__col_12">
                 <div class="offer-index__headline" id="headline" v-html="text"></div>
                 <div class="offer-index__subline" id="subline" v-html="text"></div>
-                <div class="offer-index__buttons">
-                    <a class="btn btn_color_lightest" href="services" title="More information">
-                        More information
-                    </a>
-                    <a class="btn btn_color_lightest" href="universities" title="Select University">
-                        Select University
+                <div class="offer-index__buttons" id="buttons">
+                    <a class="btn btn_color_lightest"
+                       v-for="link in links"
+                       v-bind:href="link.href"
+                       v-bind:title="link.title">
+                        {{ link.name }}
                     </a>
                 </div>
             </div>

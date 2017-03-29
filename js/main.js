@@ -60,3 +60,22 @@ new Vue ({
         'Austria is a perfect country for living, working, studying and just enjoying your life.'
     }
 });
+
+new Vue ({
+    el: '#buttons',
+    data: {
+        links: [
+            {
+                name: 'More information',
+                href: 'services',
+                title: 'More information'
+            },
+
+            {
+                name: 'Select University',
+                href: 'universities',
+                title: 'Select University'
+            }
+        ]
+    }
+});
