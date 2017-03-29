@@ -106,3 +106,13 @@ new Vue ({
                         'They will also inform you in case of any decision made by the university administration.'
     }
 });
+
+new Vue ({
+    el: '#headline-right',
+    data: {
+        headlineText: 'Fast Student Visa',
+        headlineInner: 'We will speedup the student visa process because we know how time is important for our clients.' +
+                        'Our employees always keep in touch with the Magistrate 35 and receive the latest' +
+                        'information for our clients.'
+    }
+});
