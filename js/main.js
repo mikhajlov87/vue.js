@@ -153,3 +153,32 @@ new Vue ({
         }
     }
 });
+
+Vue.component('author-text', {
+    template: '#author-text-template',
+    props: ['authorText', 'author']
+});
+
+new Vue ({
+    el: '#testimonials',
+    data: {
+        people: [
+            {
+                text: 'The world is a book and those who do not travel read only one page.',
+                author: '- Augustine of Hippo'
+            },
+
+            {
+                text: 'Education is the most powerful weapon which you can use to change the world.',
+                author: '- Nelson Mandela'
+            },
+
+            {
+                text: 'Education is the ability to listen to almost anything without losing your temper' +
+                    'or your self-confidence.',
+
+                author: '- Robert Frost'
+            }
+        ]
+    }
+});

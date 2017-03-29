@@ -100,34 +100,21 @@
     </section>
     <section class="testimonials-index">
         <div class="testimonials-index__title"></div>
-        <div class="testimonials js-testimonials owl-carousel">
-            <div class="testimonials__item icon-quotes-left">
-                <div class="testimonials__text">
-                    The world is a book and those who do not travel read only one page.
-                </div>
-                <div class="testimonials__author">
-                    - Augustine of Hippo
-                </div>
-            </div>
-            <div class="testimonials__item icon-quotes-left">
-                <div class="testimonials__text">
-                    Education is the most powerful weapon which you can use to change the world.
-                </div>
-                <div class="testimonials__author">
-                    - Nelson Mandela
-                </div>
-            </div>
-            <div class="testimonials__item icon-quotes-left">
-                <div class="testimonials__text">
-                    Education is the ability to listen to almost anything without losing your temper
-                    or your self-confidence.
-                </div>
-                <div class="testimonials__author">
-                    - Robert Frost
-                </div>
-            </div>
+        <div class="testimonials js-testimonials owl-carousel" id="testimonials">
+            <author-text
+                v-for="men in people"
+                v-bind:author-text="men.text"
+                v-bind:author="men.author"
+                v-bind:key="men.id">
+            </author-text>
         </div>
     </section>
+    <template id="author-text-template">
+        <div class="testimonials__item icon-quotes-left">
+            <div class="testimonials__text">{{ authorText }}</div>
+            <div class="testimonials__author">{{ author }}</div>
+        </div>
+    </template>
     <footer class="footer">
         <div class="grid grid_space-between">
             <div class="grid__col_3">
