@@ -86,3 +86,13 @@ new Vue ({
         text: 'Three unique advantages to work with us:'
     }
 });
+
+new Vue ({
+    el: '#headline-left',
+    data: {
+        headlineText: '100% Guaranteed Admission',
+        headlineInner: 'We guarantee your admission at a state university in the shortest period of time.' +
+                        'Besides that, we can also offer search of accommodation for free and your transfer' +
+                        'to the student accommodation in Vienna.'
+    }
+});
