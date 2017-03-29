@@ -44,3 +44,10 @@ new Vue ({
         ]
     }
 });
+
+new Vue ({
+    el: '#headline',
+    data: {
+        text: 'Start a successful future<br>in Austria today!'
+    }
+});
