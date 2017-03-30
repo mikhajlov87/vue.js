@@ -259,3 +259,52 @@ new Vue ({
         ]
     }
 });
+
+new Vue ({
+    el: '#question',
+    data: {
+        links: [
+            {
+                name: 'Austria vs Germany',
+                href: '#',
+                title: 'Получить бесплатную консультацию'
+            },
+
+            {
+                name: 'Student\'s life',
+                href: '#',
+                title: 'Где проживают студенты?'
+            },
+
+            {
+                name: 'Required documents',
+                href: '#',
+                title: 'Какие документы необходимы?'
+            },
+
+            {
+                name: 'Expenses in Austria',
+                href: '#',
+                title: 'Сколько стоит поступление?'
+            },
+
+            {
+                name: 'German courses',
+                href: '#',
+                title: 'Курсы немецкого языка'
+            },
+
+            {
+                name: 'Admission process',
+                href: '#',
+                title: 'Процесс поступления в ВУЗ'
+            },
+
+            {
+                name: 'Preparation courses in Austria',
+                href: '#',
+                title: 'Подготовительные курсы в Австрии'
+            }
+        ]
+    }
+});

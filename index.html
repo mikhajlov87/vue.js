@@ -145,30 +145,12 @@
                 </ul>
             </div>
             <div class="grid__col_4">
-                <ul class="links-block links-block_font_thin">
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Получить бесплатную консультацию">
-                            Austria vs Germany
-                        </a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Где проживают студенты?">Students' life</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Какие документы необходимы?">Required documents</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Сколько стоит поступление?">Expenses in Austria</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Курсы немецкого языка">German courses</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Процесс поступления в ВУЗ">Admission process</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="#" title="Подготовительные курсы в Австрии">
-                            Preparation courses in Austria
+                <ul class="links-block links-block_font_thin" id="question">
+                    <li class="links-block__item" v-for="link in links">
+                        <a class="links-block__link"
+                           v-bind:href="link.href"
+                           v-bind:title="link.title">
+                            {{ link.name }}
                         </a>
                     </li>
                 </ul>
