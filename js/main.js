@@ -308,3 +308,35 @@ new Vue ({
         ]
     }
 });
+
+new Vue ({
+    el: '#social-icons',
+    data: {
+        links: [
+            {
+                class: 'social-links__link icon-facebook2',
+                href: 'https://www.facebook.com/Info-Austria-1769645839971391/',
+                title: 'Facebook'
+            },
+
+            {
+                class: 'social-links__link icon-vk',
+                href: '#',
+                title: 'Vkontakte'
+            },
+
+            {
+                class: 'social-links__link icon-linkedin',
+                href: '#',
+                title: 'LinkedIn'
+            }
+        ]
+    }
+});
+
+new Vue ({
+    el: '#copyright',
+    data: {
+        text: '&copy; 2017 Info Austria. All rights reserved.'
+    }
+});

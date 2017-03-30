@@ -154,19 +154,16 @@
                         </a>
                     </li>
                 </ul>
-                <div class="social-links">
-                    <a class="social-links__link icon-facebook2"
-                       href="https://www.facebook.com/Info-Austria-1769645839971391/"
-                       title="Facebook">
+                <div class="social-links" id="social-icons">
+                    <a v-for="link in links"
+                       v-bind:class="link.class"
+                       v-bind:href="link.href"
+                       title="link.title">
                     </a>
-                    <a class="social-links__link icon-vk" href="#" title="Vkontakte"></a>
-                    <a class="social-links__link icon-linkedin" href="#" title="LinkedIn"></a>
                 </div>
             </div>
             <div class="grid__col_12">
-                <div class="copyright">
-                    &copy; 2017 Info Austria. All rights reserved.
-                </div>
+                <div class="copyright" id="copyright" v-html="text"></div>
             </div>
         </div>
     </footer>
