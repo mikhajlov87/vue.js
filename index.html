@@ -118,62 +118,29 @@
     <footer class="footer">
         <div class="grid grid_space-between">
             <div class="grid__col_3">
-                <div class="address-block icon-location">
+                <div class="address-block icon-location" id="estonia">
                     <div class="address-block__item address-block__country">
-                        <a class="address-block__link" href="contacts" title="">Estonia</a>
+                        <a class="address-block__link" v-bind:href="link.href" title="">{{ link.name }}</a>
                     </div>
-                    <div class="address-block__item">
-                        11415
-                    </div>
-                    <div class="address-block__item">
-                        Pae tn 21
-                    </div>
-                    <div class="address-block__item">
-                        +43 6886 4962658
-                    </div>
-                    <div class="address-block__item">
-                        office@info-austria.com
-                    </div>
+                    <div class="address-block__item" v-for="item in items">{{ item }}</div>
                 </div>
             </div>
             <div class="grid__col_3">
-                <div class="address-block icon-location">
+                <div class="address-block icon-location" id="russia">
                     <div class="address-block__item address-block__country">
-                        <a class="address-block__link" href="contacts" title="">Russia</a>
+                        <a class="address-block__link" v-bind:href="link.href" title="">{{ link.name }}</a>
                     </div>
-                    <div class="address-block__item">
-                        121165
-                    </div>
-                    <div class="address-block__item">
-                        Dunaevskogo Street, 4
-                    </div>
-                    <div class="address-block__item">
-                        +7 926 182 5998
-                    </div>
-                    <div class="address-block__item">
-                        infoaustria.est@gmail.com
-                    </div>
+                    <div class="address-block__item" v-for="item in items">{{ item }}</div>
                 </div>
             </div>
             <div class="grid__col_2">
-                <ul class="links-block">
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/about" title="About">About</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/education" title="Education">Education</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/universities" title="Университеты">Universities</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/services" title="Услуги">Services</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/news" title="Новости">Blog</a>
-                    </li>
-                    <li class="links-block__item">
-                        <a class="links-block__link" href="/contacts" title="Контакты">Contact</a>
+                <ul class="links-block" id="footer-menu">
+                    <li class="links-block__item" v-for="link in links">
+                        <a class="links-block__link"
+                           v-bind:href="link.href"
+                           v-bind:title="link.title">
+                            {{ link.name }}
+                        </a>
                     </li>
                 </ul>
             </div>

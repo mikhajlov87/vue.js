@@ -182,3 +182,80 @@ new Vue ({
         ]
     }
 });
+
+new Vue ({
+    el: '#estonia',
+    data: {
+        link: {
+                name: 'Estonia',
+                href: 'contacts',
+            },
+
+        items: [
+            '11415',
+            'Pae tn 21',
+            '+43 6886 4962658',
+            'office@info-austria.com'
+        ]
+    }
+});
+
+new Vue ({
+    el: '#russia',
+    data: {
+        link: {
+            name: 'Russia',
+            href: 'contacts'
+        },
+
+        items: [
+            '121165',
+            'Dunaevskogo Street, 4',
+            '+7 926 182 5998',
+            'infoaustria.est@gmail.com'
+        ]
+    }
+});
+
+new Vue ({
+    el: '#footer-menu',
+    data: {
+        links: [
+            {
+                name: 'About',
+                href: '/about',
+                title: 'About'
+            },
+
+            {
+                name: 'Education',
+                href: '/education',
+                title: 'Education'
+            },
+
+            {
+                name: 'Universities',
+                href: '/universities',
+                title: 'Университеты'
+            },
+
+            {
+                name: 'Services',
+                href: '/services',
+                title: 'Услуги'
+            },
+
+            {
+                name: 'Blog',
+                href: '/news',
+                title: 'Новости'
+            },
+
+            {
+                name: 'Contact',
+                href: '/contacts',
+                title: 'Контакты'
+            }
+        ]
+    }
+});
